@@ -21,12 +21,10 @@ int main() {
 
     cout << "Grade dasar: " << grade << endl;
 
-    // Bonus kehadiran
     if (kehadiran >= 95 && grade > 'A') {
         grade = grade - 1; // naik 1 tingkat (B→A, C→B, dst.)
         cout << "Bonus kehadiran: " << kehadiran << "% (Naik 1 tingkat)" << endl;
     }
-    // Penalti kehadiran
     else if (kehadiran < 75 && grade < 'E') {
         grade = grade + 1; // turun 1 tingkat (A→B, B→C, dst.)
         cout << "Penalti kehadiran: " << kehadiran << "% (Turun 1 tingkat)" << endl;

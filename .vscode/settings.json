@@ -5,6 +5,7 @@
       "*.sqC": "cpp",
       "*.sqx": "cpp",
       "*.css": "tailwindcss",
-      "ostream": "cpp"
+      "ostream": "cpp",
+      "iostream": "cpp"
    }
 }
