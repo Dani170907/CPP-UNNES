@@ -10,16 +10,22 @@ int main () {
    double skorAkhir = (kebersihan * 0.3) + (pelayanan * 0.3) + (lokasi * 0.2) + (harga * 0.2);
 
    string rating;
+   int bintang;
    if (skorAkhir >= 4.5) {
-      rating = "Bintang 5 (Excellent)";
+      rating = "(Excellent)";
+      bintang = 5;      
    } else if (skorAkhir >= 3.5) {
-      rating = "Bintang 4 (Very Good)";
+      rating = "(Very Good)";
+      bintang = 4;
    } else if (skorAkhir >= 2.5) {
-      rating = "Bintang 3 (Good)";
+      rating = "(Good)";
+      bintang = 3;
    } else if (skorAkhir >= 1.5) {
-      rating = "Bintang 2 (Fair)";
+      rating = "(Fair)";
+      bintang = 2;
    } else {
-      rating = "Bintang 1 (Poor)";
+      rating = "(Poor)";
+      bintang = 1;
    }
 
    cout << "=== EVALUASI HOTEL ===" << endl;
@@ -28,7 +34,7 @@ int main () {
    cout << "Lokasi " << lokasi << " (Bobot 20%)" << endl; 
    cout << "Harga " << harga << " (Bobot 20%)" << endl; 
    cout << "Skor Akhir: " << skorAkhir << endl;
-   cout << "Rating: " << rating << endl;
+   cout << "Rating: Bintang " << bintang << " " << rating << endl;
    
    return 0;
    
